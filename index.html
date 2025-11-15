@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מצגת IFRS17</title>
+    <link rel="stylesheet" href="new-styles.css">
+</head>
+<body>
+<!-- Zoom Tip Dialog -->
+<div id="zoomTipDialog" class="zoom-tip-dialog">
+    <div class="zoom-tip-content">
+        <button class="zoom-tip-close" onclick="closeZoomTip()">×</button>
+        <div class="zoom-tip-icon">🔍</div>
+        <h3 class="zoom-tip-title">טיפ למצגת מושלמת</h3>
+        <div class="zoom-tip-text">
+            <div class="zoom-table">
+                <div class="zoom-row">
+                    <div class="zoom-label">🔍 להתאמת רמת הזום:</div>
+                    <div class="zoom-options">
+                        <span><strong>Ctrl +</strong> להגדלה</span>
+                        <span><strong>Ctrl -</strong> להקטנה</span>
+                        <span><strong>Ctrl 0</strong> לאיפוס</span>
+                    </div>
+                </div>
+                
+                <div class="zoom-row">
+                    <div class="zoom-label">⛶ לצפייה במסך מלא:</div>
+                    <div class="zoom-options">
+                        <span><strong>F11</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="presentation-container">
+        <!-- Navigation Controls -->
+        <div class="nav-controls">
+            <button id="prevSlide" class="nav-button" onclick="changeSlide(-1)"></button>
+            <button id="nextSlide" class="nav-button" onclick="changeSlide(1)"></button>
+            <div id="slideIndicator" class="slide-indicator">שקף 1 מתוך 6</div>
+        </div>
+
+        <!-- SLIDE 0: Opening Slide -->
+        <div id="slide0" class="slide active">
+            <div class="opening-slide">
+                <div class="opening-background-glow"></div>
+                
+                <!-- Animated Particles Background -->
+                <div class="particles-container">
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                </div>
+                
+                <!-- Main Content -->
+                <div class="opening-content">
+                    <!-- Logo -->
+                    <div class="opening-logo-container">
+                        <img src="https://www.gov.il/BlobFolder/office/capital_market_authority/he/logo.png" alt="לוגו רשות שוק ההון" class="opening-logo">
+                    </div>
+                    
+                    <!-- Main Title -->
+                    <div class="opening-title-container">
+                        <h1 class="opening-main-title">IFRS 17</h1>
+                        <h2 class="opening-subtitle">התחלנו!</h2>
+                    </div>
+                    
+                    <!-- Author Info -->
+                    <div class="opening-author">
+                        <div class="opening-author-name">דקלה מושקוביץ</div>
+                        <div class="opening-author-title">חשבונאית ראשית</div>
+                    </div>
+                </div>
+                
+                <!-- Decorative Elements -->
+                <div class="opening-circle opening-circle-1"></div>
+                <div class="opening-circle opening-circle-2"></div>
+                <div class="opening-circle opening-circle-3"></div>
+            </div>
+        </div>
+
+        <!-- SLIDE 1: Timeline -->
+        <div id="slide1" class="slide">
+            <div class="timeline-slide">
+                <div class="timeline-background-glow"></div>
+                
+                <!-- Header -->
+                <div class="timeline-header">
+                    <h1 class="timeline-title">קצת היסטוריה</h1>
+                </div>
+                
+                <!-- Timeline Container -->
+                <div class="timeline-container">
+                    <!-- Timeline Line -->
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Timeline Items -->
+                    <div class="timeline-item" data-year="1999">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content timeline-top">
+                            <div class="timeline-year">דצמבר<br>1999</div>
+                            <div class="timeline-label">Issues<br>Paper</div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-year="2004-1">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content timeline-bottom">
+                            <div class="timeline-year">מרץ<br>2004</div>
+                            <div class="timeline-label">פרסום IFRS4</div>
+                        </div>
+                    </div>
+                    
+<div class="timeline-item" data-year="2004-2">
+                        <div class="timeline-dot timeline-dot-highlighted"></div>
+                        <div class="timeline-content timeline-top">
+                            <div class="timeline-year">אוקטובר<br>2004</div>
+                            <div class="timeline-label">הקמת ועדה<br>לבחינת יישום התקן</div>
+                            <div class="timeline-pointer">👉</div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-year="2008-1">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content timeline-bottom">
+                            <div class="timeline-year">ינואר<br>2008</div>
+                            <div class="timeline-label">אימוץ פורמלי<br>של IFRS בישראל</div>
+                        </div>
+                    </div>
+                    
+<div class="timeline-item" data-year="2008-2">
+                        <div class="timeline-dot timeline-dot-highlighted"></div>
+                        <div class="timeline-content timeline-top">
+                            <div class="timeline-year">דצמבר<br>2008</div>
+                            <div class="timeline-label">יישום לראשונה<br>של דוח לדוגמה</div>
+                            <div class="timeline-pointer">👉</div>
+                        </div>
+                    </div>
+                    
+<div class="timeline-item" data-year="2017">
+                        <div class="timeline-dot timeline-dot-highlighted"></div>
+                        <div class="timeline-content timeline-bottom">
+                            <div class="timeline-year">מאי<br>2017</div>
+                            <div class="timeline-label">פרסום תקן<br>IFRS17 סופי</div>
+                            <div class="timeline-pointer">👉</div>
+                        </div>
+                    </div>
+                    
+<div class="timeline-item" data-year="2025">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content timeline-top">
+                            <div class="timeline-year">ינואר<br>2025</div>
+                            <div class="timeline-label">יישום לראשונה<br>של IFRS17</div>
+                        </div>
+                    </div>
+                    
+                    <!-- End Dot -->
+                    <div class="timeline-item timeline-end">
+                        <div class="timeline-dot-end"></div>
+                    </div>
+                </div>
+                
+                <!-- Footer Logo -->
+                <div class="timeline-footer">
+                    <img src="https://www.gov.il/BlobFolder/office/capital_market_authority/he/logo.png" alt="לוגו" class="timeline-footer-logo">
+                    <div class="timeline-footer-text">רשות שוק ההון, ביטוח וחיסכון</div>
+                </div>
+            </div>
+        </div>
+
+<!-- SLIDE 2: הקמת ועדה -->
+        <div id="slide2" class="slide">
+            <div class="content-slide">
+                <div class="content-background-glow"></div>
+                
+                <!-- Header -->
+                <div class="content-header">
+                    <h1 class="content-title">הקמת ועדה לבחינת יישום התקן</h1>
+                </div>
+                
+                <!-- Content Body -->
+                <div class="content-body">
+                    <div class="bullet-list">
+                        <div class="bullet-item">
+                            <div class="bullet-number-wrapper">
+                                <div class="bullet-number">1</div>
+                            </div>
+                            <div class="bullet-text">חוזה ביטוח - חוזה השקעה</div>
+                        </div>
+                        
+                        <div class="bullet-item">
+                            <div class="bullet-number-wrapper">
+                                <div class="bullet-number">2</div>
+                            </div>
+                            <div class="bullet-text">הצגה של רכיבי חיסכון</div>
+                        </div>
+                        
+                        <div class="bullet-item">
+                            <div class="bullet-number-wrapper">
+                                <div class="bullet-number">3</div>
+                            </div>
+                            <div class="bullet-text">עתודה בגין סיכונים יוצאים מן הכלל</div>
+                        </div>
+                        
+                        <div class="bullet-item">
+                            <div class="bullet-number-wrapper">
+                                <div class="bullet-number">4</div>
+                            </div>
+                            <div class="bullet-text">בדיקת נאותות התחייבות (LAT)</div>
+                        </div>
+                        
+                        <div class="bullet-item">
+                            <div class="bullet-number-wrapper">
+                                <div class="bullet-number">5</div>
+                            </div>
+                            <div class="bullet-text">גילוי</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Footer -->
+                <div class="content-footer">
+                    <img src="https://www.gov.il/BlobFolder/office/capital_market_authority/he/logo.png" alt="לוגו" class="content-footer-logo">
+                    <div class="content-footer-text">רשות שוק ההון, ביטוח וחיסכון</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 3: יישום לראשונה -->
+        <div id="slide3" class="slide">
+            <div class="content-slide">
+                <div class="content-background-glow"></div>
+                
+                <!-- Header -->
+                <div class="content-header">
+                    <h1 class="content-title">יישום לראשונה של דוח לדוגמה</h1>
+                </div>
+                
+                <!-- Content Body -->
+                <div class="content-body">
+                    <div class="bullet-list">
+                        <div class="bullet-item">
+                            <div class="bullet-number-wrapper">
+                                <div class="bullet-number">1</div>
+                            </div>
+                            <div class="bullet-text">פירוט לגבי הכנסות, רווח והרכב עתודות בביטוח חיים ובריאות</div>
+                        </div>
+                        
+                        <div class="bullet-item">
+                            <div class="bullet-number-wrapper">
+                                <div class="bullet-number">2</div>
+                            </div>
+                            <div class="bullet-text">שיטות והנחות אקטואריות</div>
+                        </div>
+                        
+                        <div class="bullet-item">
+                            <div class="bullet-number-wrapper">
+                                <div class="bullet-number">3</div>
+                            </div>
+                            <div class="bullet-text">ביאור התפתחות</div>
+                        </div>
+                        
+                        <div class="bullet-item">
+                            <div class="bullet-number-wrapper">
+                                <div class="bullet-number">4</div>
+                            </div>
+                            <div class="bullet-text">סיכוני אשראי וריבית</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Footer -->
+                <div class="content-footer">
+                    <img src="https://www.gov.il/BlobFolder/office/capital_market_authority/he/logo.png" alt="לוגו" class="content-footer-logo">
+                    <div class="content-footer-text">רשות שוק ההון, ביטוח וחיסכון</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 4: עבודה על IFRS17 -->
+        <div id="slide4" class="slide">
+            <div class="content-slide">
+                <div class="content-background-glow"></div>
+                
+                <!-- Header -->
+                <div class="content-header">
+                    <h1 class="content-title">עבודה על IFRS17</h1>
+                </div>
+                
+                <!-- Content Body -->
+                <div class="content-body">
+                    <div class="bullet-list">
+                        <div class="bullet-item">
+                            <div class="bullet-number-wrapper">
+                                <div class="bullet-number">1</div>
+                            </div>
+                            <div class="bullet-text">מעקב צמוד אחר אופן היישום בחברות</div>
+                        </div>
+                       
+                        
+                        <div class="bullet-item">
+                            <div class="bullet-number-wrapper">
+                                <div class="bullet-number">2</div>
+                            </div>
+                            <div class="bullet-text">ביצוע מבדקים כמותיים (QIS)</div>
+                        </div>
+                        
+                        <div class="bullet-item">
+                            <div class="bullet-number-wrapper">
+                                <div class="bullet-number">3</div>
+                            </div>
+                            <div class="bullet-text">פרסום חוזר סוגיות</div>
+                        </div>
+                        
+                        <div class="bullet-item">
+                            <div class="bullet-number-wrapper">
+                                <div class="bullet-number">4</div>
+                            </div>
+                            <div class="bullet-text">עבודה על דוח לדוגמה וטפסים</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Footer -->
+                <div class="content-footer">
+                    <img src="https://www.gov.il/BlobFolder/office/capital_market_authority/he/logo.png" alt="לוגו" class="content-footer-logo">
+                    <div class="content-footer-text">רשות שוק ההון, ביטוח וחיסכון</div>
+                </div>
+            </div>
+        </div>
+
+<!-- SLIDE 5: Closing Slide -->
+        <div id="slide5" class="slide">
+            <div class="closing-slide">
+                <div class="closing-background-glow"></div>
+                
+                <!-- Animated Particles Background -->
+                <div class="particles-container">
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                </div>
+                
+                <!-- Main Content -->
+                <div class="closing-content">
+                    <!-- Logo -->
+                    <div class="closing-logo-container">
+                        <img src="https://www.gov.il/BlobFolder/office/capital_market_authority/he/logo.png" alt="לוגו רשות שוק ההון" class="closing-logo">
+                    </div>
+                    
+                    <!-- Title -->
+                    <div class="closing-title-container">
+                        <h1 class="closing-main-title">דוחות כספיים בעידן IFRS 17</h1>
+                        <h2 class="closing-subtitle">ניתוח תוצאות ומגמות</h2>
+                    </div>
+                </div>
+                
+                <!-- Decorative Elements -->
+                <div class="closing-circle closing-circle-1"></div>
+                <div class="closing-circle closing-circle-2"></div>
+                <div class="closing-circle closing-circle-3"></div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <script src="new-main.js"></script>
+</body>
+</html>
